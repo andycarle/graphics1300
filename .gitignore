@@ -1,0 +1,26 @@
+# ---- Build output ------------------------------------------------------------
+
+# Compiled programs on Windows (build.bat names them after the source file).
+*.exe
+
+# The cached, compiled copy of tigr.c (tigr-windows.o, tigr-mac.o, tigr-linux.o),
+# plus any other object files from building by hand.
+*.o
+*.obj
+
+# Compiled programs on Mac and Linux have no file extension, so list them by name.
+/main
+/demo
+/swarm/swarm
+
+# Mac debug symbols.
+*.dSYM/
+
+# ---- Editors and operating systems ---------------------------------------------
+
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini

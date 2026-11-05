@@ -1,0 +1,11 @@
+# Let git normalize line endings for text files.
+* text=auto
+
+# Shell scripts must use Unix line endings, or bash fails with "$'\r': command not found".
+*.sh  text eol=lf
+
+# Batch files are safest with Windows line endings.
+*.bat text eol=crlf
+
+# Images are binary: never touch their bytes.
+*.png binary
